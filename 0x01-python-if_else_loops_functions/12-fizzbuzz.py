@@ -9,4 +9,3 @@ def fuzzbuzz():
             if i % 5 == 0:
                 print("Bizz", end="")
             print(" ", end="")
-fuzzbuzz()
