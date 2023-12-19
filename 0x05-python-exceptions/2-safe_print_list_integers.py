@@ -3,9 +3,11 @@ def safe_print_list_integers(my_list=[], x=0):
     printed_integers = 0
     try:
         for i in range(x):
-            print("{:d}".format(my_list[i]), end="0")
-            printed_integers = printed_integers + 1
-        print()
-        return printed_integers
+            if type(my_list[i]) == int:
+                print("{:d}".format(my_list[i]), end="")
+                printed_integers += 1
     except TypeError:
         pass
+    finally:
+        print()
+        return printed_integers
