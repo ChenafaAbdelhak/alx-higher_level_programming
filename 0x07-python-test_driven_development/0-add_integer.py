@@ -2,7 +2,7 @@
 '''module to add integers'''
 
 
-def add_integer(a, b=98):
+def add_integer(a, b=98): 
     """
     add two integer a + b
     """
