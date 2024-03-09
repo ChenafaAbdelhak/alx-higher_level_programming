@@ -3,7 +3,7 @@
 inherited from"""
 
 
-def is_kind_of_clas(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """check if an object is an instance inherited from the class
 
     Args:
