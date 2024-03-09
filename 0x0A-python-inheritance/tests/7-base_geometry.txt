@@ -1,0 +1,83 @@
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("checkthat", 111)
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.area()
+	Traceback (most recent call last):
+	Exception: area() is not implemented
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("checkthat", 0)
+	Traceback (most recent call last):
+	...
+	ValueError: checkthat must be greater than 0
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("checkthat", -1)
+	Traceback (most recent call last):
+	...
+	ValueError: checkthat must be greater than 0
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("checkthat", None)
+	Traceback (most recent call last):
+	...
+	TypeError: checkthat must be an integer
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("checkthat", "hello")
+	Traceback (most recent call last):
+	...
+	TypeError: checkthat must be an integer
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("checkthat", [1, 2, 3])
+     	Traceback (most recent call last):
+     	...
+	TypeError: checkthat must be an integer
+
+::
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("checkthat", (1, 2, 3))
+     	Traceback (most recent call last):
+     	...
+     	TypeError: checkthat must be an integer
+
+::
+
+     	>>> bg = BaseGeometry()
+     	>>> bg.integer_validator("checkthat", {"key": 1})
+     	Traceback (most recent call last):
+     	...
+     	TypeError: checkthat must be an integer
+
+::
+
+     	>>> bg = BaseGeometry()
+     	>>> bg.integer_validator("age", True)
+     	Traceback (most recent call last):
+     	...
+     	TypeError: age must be an integer
+
+::
+
+     	>>> bg = BaseGeometry()
+     	>>> bg.integer_validator("checkthat", {3, 4})
+     	Traceback (most recent call last):
+     	...
+     	TypeError: checkthat must be an integer
+
