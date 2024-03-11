@@ -14,5 +14,7 @@ if (isNaN(asInt)) {
       str += '\n';
     }
   }
+  if (str != '') {
     console.log(str);
+  }
 }
