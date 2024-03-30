@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+module that fetches a response from a url.
+"""
 from urllib import request
 
 
