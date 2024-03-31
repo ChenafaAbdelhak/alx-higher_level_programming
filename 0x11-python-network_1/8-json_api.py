@@ -7,7 +7,6 @@ from sys import argv
 import requests
 
 if __name__ == "__main__":
-    
     url = "http://0.0.0.0:5000/search_user"
     try:
         q = argv[1]
