@@ -16,4 +16,4 @@ if __name__ == "__main__":
 
     r = requests.post(url, data={"q": q})
 
-    print(r.text)
+    print(r.json())
