@@ -8,7 +8,8 @@ from urllib import request
 
 
 url = sys.argv[1]
-with request.urlopen(url) as response:
+req = requesr.Request(url)
+with request.urlopen(req) as response:
     header = response.getheader("X-Request-Id")
 
 print(header)
