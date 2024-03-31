@@ -17,6 +17,6 @@ if __name__ == "__main__":
 
     if status == 200:
         user_id = response.json().get("id")
-        print(f"User ID: {user_id}")
+        print(f"{user_id}")
     else:
-        print(f"Failed to retrieve user ID. Status code: {status}")
+        print(f"None")
